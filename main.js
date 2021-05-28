@@ -33,12 +33,13 @@ AOS.init({
 window.onscroll = () => {
     const services = document.querySelector("#portfolio");
     const up = document.querySelector("#up");
+    const top = window.scrollY;
 
-    if (elementInViewport(services)) {
+    if (elementInViewport(services) || top >= 5000) {
         return (up.style.display = "flex");
     }
 
-    return (up.style.display = "none");
+    up.style.display = "none";
 };
 
 const elementInViewport = (el) => {
