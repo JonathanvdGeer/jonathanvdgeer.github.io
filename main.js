@@ -29,3 +29,24 @@ AOS.init({
     duration: 1800,
     once: true,
 });
+
+window.addEventListener("scroll", () => {
+    const box = document.querySelector("#services");
+    const rect = box.getBoundingClientRect();
+    const top = window.scrollY;
+
+    const isInViewport =
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth);
+
+    if (isInViewport) {
+        return (document.querySelector("#up").style.display = "flex");
+    }
+
+    if (top <= 100) {
+        return (document.querySelector("#up").style.display = "none");
+    }
+});
