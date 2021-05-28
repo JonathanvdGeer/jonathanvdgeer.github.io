@@ -698,6 +698,7 @@ h3 {
 }
 
 .up {
+/*
     position: absolute;
     width: 5rem;
     height: 5rem;
@@ -706,6 +707,21 @@ h3 {
     right: 5rem;
     border-radius: 100%;
     display: flex;
+    animation: pulse 2s infinite;
+    cursor: pointer;
+*/
+}
+
+.up {
+    position: fixed;
+    right: 30px;
+    top: 94%;
+    width: 5em;
+    height: 5rem;
+    margin-top: -2.5em;
+    background-color: #eee;
+    border-radius: 100%;
+    display: none;
     animation: pulse 2s infinite;
     cursor: pointer;
 }
