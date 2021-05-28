@@ -559,7 +559,7 @@ h3 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 5rem;
+	margin-bottom: 9rem;
 }
 
 .portfolio-item:last-child {
@@ -589,7 +589,7 @@ h3 {
 
 .portfolio-description .cta {
 	display: inline-block;
-	margin: 15px 15px 50px 0px;
+	margin: 15px 15px 0px 0px;
 	font-size: 1.5rem;
 	text-transform: uppercase;
 	color: #3883ff;
