@@ -30,23 +30,31 @@ AOS.init({
     once: true,
 });
 
-window.addEventListener("scroll", () => {
-    const box = document.querySelector("#services");
-    const rect = box.getBoundingClientRect();
-    const top = window.scrollY;
+window.onscroll = () => {
+    const services = document.querySelector("#portfolio");
+    const up = document.querySelector("#up");
 
-    const isInViewport =
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <=
-        (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth);
-
-    if (isInViewport) {
-        return (document.querySelector("#up").style.display = "flex");
+    if (elementInViewport(services)) {
+        return (up.style.display = "flex");
     }
 
-    if (top <= 100) {
-        return (document.querySelector("#up").style.display = "none");
+    return (up.style.display = "none");
+};
+
+const elementInViewport = (el) => {
+    let top = el.offsetTop;
+    let left = el.offsetLeft;
+    let width = el.offsetWidth;
+    let height = el.offsetHeight;
+    while (el.offsetParent) {
+        el = el.offsetParent;
+        top += el.offsetTop;
+        left += el.offsetLeft;
     }
-});
+    return (
+        top < window.pageYOffset + window.innerHeight &&
+        left < window.pageXOffset + window.innerWidth &&
+        top + height > window.pageYOffset &&
+        left + width > window.pageXOffset
+    );
+};
