@@ -352,7 +352,7 @@ li {
 }
 
 @media screen and (max-width:900px) {
- .abilities .container {
+    .abilities .container {
         flex-flow: column wrap;
     }
 }
@@ -387,7 +387,7 @@ h2 {
     font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    
+
 }
 
 .containerSkill,
@@ -399,7 +399,7 @@ h3 {
     font-size: 0.5rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    
+
 }
 
 .progress {
@@ -539,6 +539,7 @@ h3 {
         width: 0;
     }
 }
+
 /*End skill bars*/
 
 
@@ -679,7 +680,7 @@ h3 {
 
 .contact img {
     margin-top: 6rem;
-    max-width:  70%;
+    max-width: 70%;
     min-width: 70%;
 }
 
@@ -744,7 +745,7 @@ h3 {
 
 /*Start media queries*/
 @media screen and (max-width: 786px) {
-/*
+    /*
     body {
         background: url("images/Background/sitebg2.jpg") no-repeat center fixed;
         background-size: cover;
@@ -807,7 +808,6 @@ h3 {
     .timeline .date:after {
         left: -5.9rem;
     }
-}
 
 @media screen and (max-width: 600px) {
     .menu-toggler {
@@ -856,8 +856,10 @@ h3 {
         font-size: 1.2rem;
     }
 
-    form {
-        width: 100%;
+    .contact img {
+        margin-top: 6rem;
+        max-width: 100%;
+        min-width: 70%;
     }
 
     .up {
