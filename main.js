@@ -59,3 +59,11 @@ const elementInViewport = (el) => {
         left + width > window.pageXOffset
     );
 };
+
+const button = document.getElementById("btn");
+const goBack = () => {
+    window.history.back();
+};
+button.addEventListener("click", (event) => {
+    goBack();
+})
