@@ -52,7 +52,6 @@ body {
 	    width: 100%;
 	}
 
-
 	/*End global*/
 
 
@@ -280,6 +279,7 @@ body {
 	    text-transform: uppercase;
 	    line-height: 0;
 	    margin-bottom: 6rem;
+        margin-top: 6rem;
 	}
 
 	.about-heading h1 {
