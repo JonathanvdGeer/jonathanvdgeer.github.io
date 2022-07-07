@@ -253,7 +253,7 @@ body {
 	    background: linear-gradient(to top, #ffe838, #fd57bf);
 	    -webkit-background-clip: text;
 	    -webkit-text-fill-color: transparent;
-/*	    padding: 1rem;*/
+	    padding: 1rem;
 	    user-select: none;
 	}
 
