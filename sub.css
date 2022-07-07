@@ -203,10 +203,10 @@ body {
 	.landing-text h1 {
 	    font-size: 14rem;
 	    font-family: proxima nova, sans-serif;
-	    background: linear-gradient(#ffe838, #fd57bf);
+	    background: linear-gradient(to top, #ffe838, #fd57bf);
 	    -webkit-background-clip: text;
 	    -webkit-text-fill-color: transparent;
-/*	    padding: 1rem;*/
+	    padding: 1rem;
 	    user-select: none;
 	}
 
