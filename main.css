@@ -316,13 +316,16 @@ body {
 	}
 
 	.fa-linkedin:hover {
-	    color: #0072b1;
+	    color: #0e76a8;
 	}
 
 	.fa-file-pdf:hover {
 	    color: #f40f02;
 	}
 
+	.fa-instagram:hover {
+	    color: #bc2a8d;
+	}
 
 	/*End about*/
 
